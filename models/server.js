@@ -33,7 +33,7 @@ class Server {
     }
 
     listen(){
-        this.app.listen( 8080, () => {
+        this.app.listen( this.port, () => {
             console.log( 'Server running at port:', this.port )
         })
     }
